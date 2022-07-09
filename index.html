@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate MCQ</title>
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="flex c body">
+
+  <div class="header flex">
+    <button class="flex clickable menu" onclick="startCreate()"><span>Create</span></button>
+    <button class="flex clickable menu" onclick="startPractise()"><span>Practise</span></button>
+    <button class="flex clickable menu" onclick="pan.innerHTML='Wait foolish other features are coming soon...'"><span>Other</span></button>
+  </div>
+  
+  <div id="pan" class="pan createPan">
+    <div class="chList">
+      
+    </div>
+
+  </div>
+
+  <script src="js/script.js"></script>
+  <script src="js/createQuestion.js"></script>
+  <script src="js/practise.js"></script>
+
+</body>
+</html>

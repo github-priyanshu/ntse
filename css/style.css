@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+.flex{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex.sb{justify-content: space-between;}
+.c{
+  flex-flow: column;
+}
+.texCen{
+  text-align: center;
+}
+.w100p{
+  width: 100%;
+}
+.body{
+  --lightBg1: #fff;
+  --lightBg2: #eee;
+  --darkBg1: #111;
+  --darkBg2: #222;
+  --lightText1: #fff;
+  --darkText2: #222;
+  --darkText3: #333;
+  --darkText5: #555;
+  min-height: 100vh;
+  background: var(--darkBg2);
+  color: var(--lightBg1);
+  font-family: "PT Sans";
+  width: 100%;
+  display: flex;align-items: center;justify-content: flex-start;flex-flow: column;
+  font-size: 1.3em;
+}
+html{ 
+  scroll-behavior: smooth;
+  -webkit-scroll-behavior: smooth;
+}
+.forceCenter{ 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}
+.noBtn{
+  outline: none;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+input{
+  width: 100%;
+  padding: 10px;
+}
+.clickable{
+  background: #333;
+  color: #fff;
+  border: 1px solid #000;
+  outline: none;
+}
+.clickable:active{
+  background: #000;
+}
+
+/* HEADER */
+.header{
+  width: 100%;
+  overflow: auto;
+}
+.header .menu{
+  width: 100px;
+}
+
+/* HEADER */
+.header{
+  width: 100%;
+  overflow: auto;
+}
+.header .menu{
+  width: 33%;
+  color: #fff;
+  height: 40px;
+  border: 1px solid #000;
+}
+
+
+/*CREATE PAN*/
+.lineMargin{
+  background: #FFF6;
+}
+.pan {
+  max-width: 500px;
+  width: 100%;
+  border: 1px solid #000;
+  padding: 20px
+}
+.pan > *{
+  width: 100%;
+}
+.pan button,
+.pan textarea{
+  width: 100%;
+  color: #fff;
+  height: 30vh;
+  resize: vertical;
+  word-wrap: normal;
+  word-break: normal;
+}
+.pan button{
+  width: auto;height: auto;padding: 10px 20px;
+}
+
+/* PRACTISE PAN */
+.pan.practise .chName > *{
+  padding: 10px;
+  justify-content: space-between;
+}
+.pan.practise .chName input[type="radio"]{
+  width: auto;
+}
+.pan.practise .chName .optsStart{
+  width: 150px;
+}
+.pan .chName .onActive{
+  display: none;
+  background: #333;
+  border: 1px solid #000;
+}
+.pan .chName.active .onActive{
+  display: flex;
+}
+.pan #qList .opt{
+  padding: 10px;
+  margin: 10px 0;
+}
+.pan #qList .ansPan{
+  background: #333d;
+  padding: 10px;
+}
+.pan #qList .ansPan .bulb{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: var(--bg);
+  box-shadow: 0 0 30px var(--bg), inset 5px 5px 10px #fff6, inset -5px -5px 10px #0004; 
+}
+.pan #qList .nextBtn{
+  position: fixed;
+  bottom: 100px;
+  border-radius: 4px;
+  --col: #000;
+  border-color: var(--col);
+  right: 30px;
+}
