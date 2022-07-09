@@ -112,7 +112,7 @@ makeFrameHTML(){
 }
 
 showNothing(){
-	log("..found nothing")
+	pan.innerHTML="No excersises you have created and becoming oversmart. First create it."
 }
 
 }
